@@ -2,10 +2,10 @@
 
 {% block body %}
 <h2>LIST OF TASK TO DO</h2>
-{% for task in tasks %}
+{% for task in taskdic %}
 <ul>
       <li>{{task}}</li>
 </ul>
 {% endfor %}
-   <a href="{% url 'tasks:add' %}">ADD NEW TASK</a>
+   <a href="{% url 'tas:add' %}">ADD NEW TASK</a>
 {% endblock %}
